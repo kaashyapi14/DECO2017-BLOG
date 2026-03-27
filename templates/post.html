@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/a11y-light.min.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/a11y-dark.min.css" media="(prefers-color-scheme: dark)">
+</head>
+
+<body>
+
+    <main>
+        <h1>{{title}}</h1>
+        <p class="date">{{date}}</p>
+        <p class="author">{{author}}</p>
+
+        <hr>
+        <article>
+
+            <!-- BLOG CONTENT INSERTED HERE -->
+            {{content}}
+
+        </article>
+        <hr>
+
+        <footer>
+            <ul class="tags-list">
+                {{tags}}
+            </ul>
+        </footer>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+</body>
+
+</html>

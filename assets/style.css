@@ -1,0 +1,63 @@
+:root {
+  --max-width: 720px;
+
+  color-scheme: light dark;
+  --light-bg: #eeeeee;
+  --light-text: #111111;
+  --light-accent: #4f46e5;
+  --dark-bg: #111111;
+  --dark-text: #eeeeee;
+  --dark-accent: #818cf8;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: light-dark(var(--light-bg), var(--dark-bg));
+  color: light-dark(var(--light-text), var(--dark-text));
+  margin: 0;
+  line-height: 1.6;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem;
+}
+
+a {
+  color: light-dark(var(--light-accent), var(--dark-accent));
+}
+
+span.tag {
+  border: light-dark(var(--light-accent), var(--dark-accent)) 1px solid;
+  border-radius: 0.5rem;
+  padding: 0 0.2rem;
+  margin: 0 0.2rem;
+  font-size: 0.7rem;
+}
+
+span.date::before {
+    content: "📅 "; /* Calendar emoji before the date */
+}
+
+span.author::before {
+    content: "✍️ "; /* Pen emoji before the author */
+}
+
+.date, .author {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+p.summary {
+    margin: 0;
+    font-size: 0.9rem
+}
+
+ul.tags-list {
+    padding: 0;
+}
+
+ul.post-list{
+    list-style: none;
+}
