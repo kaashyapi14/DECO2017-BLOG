@@ -1,5 +1,5 @@
 ---
-title: Wireframes and Design Decisions
+title: Blog 4 — Wireframes and Design Decisions
 date: 2026-05-13
 author: Kaashyapi Agarwal
 summary: Walking through every wireframed page and the design decisions behind each one.

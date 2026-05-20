@@ -1,5 +1,5 @@
 ---
-title: From Wireframes to a Real Data Model
+title: Blog 5 - From Wireframes to a Real Data Model
 date: 2026-05-13
 author: Kaashyapi Agarwal
 summary: Mapping every page to a data structure and designing the five database tables that power Folio Hub before a single route is written.

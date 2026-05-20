@@ -1,5 +1,5 @@
 ---
-title: Building and Evaluating Folio Hub
+title: Blog 6 - Building and Evaluating Folio Hub
 date: 2026-05-13
 author: Kaashyapi Agarwal
 summary: With all seven pages built, the focus shifts to user testing, accessibility, platform responsibility and what needs connecting before the final submission.

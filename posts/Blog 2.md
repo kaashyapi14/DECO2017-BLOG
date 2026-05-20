@@ -1,5 +1,5 @@
 ---
-title: Three Ideas, One Direction
+title: Blog 2 — Three Ideas, One Direction
 date: 2026-05-13
 author: Kaashyapi Agarwal
 summary: How our group combined three separate concepts into one unified platform called Spark.

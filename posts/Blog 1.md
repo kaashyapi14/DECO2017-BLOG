@@ -1,5 +1,5 @@
 ---
-title: From Brief to One Idea
+title: Blog 1 -From Brief to One Idea
 date: 2026-05-13
 author: Kaashyapi Agarwal
 summary: Breaking down the BlaBla Corp brief and narrowing down to one concept worth building.

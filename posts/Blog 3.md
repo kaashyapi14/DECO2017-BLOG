@@ -1,5 +1,5 @@
 ---
-title: Finalising the Idea and Structure
+title: Blog 3 — Finalising the Idea and Structure
 date: 2026-05-13
 author: Kaashyapi Agarwal
 summary: Stripping Spark back, narrowing the audience to designers, and mapping the sitemap and user flow for Folio Hub.
