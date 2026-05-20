@@ -53,6 +53,7 @@ The previous tracker was replaced with an owner-defined checklist where the owne
 ![Sitemap 2 for Folio Hub](/DECO2017-BLOG/assets/images/sitemap-2.png)
 
 *Fig. 6 — Sitemap continued — pages and access control across the full platform*
+
 Mapping screens before writing any code forces a concrete question: what does the platform actually need versus what would be convenient to have?
 
 ![Sitemap Table for Folio Hub](/DECO2017-BLOG/assets/images/sitemap-table.png)
