@@ -55,7 +55,7 @@ The previous tracker was replaced with an owner-defined checklist where the owne
 *Fig. 6 — Sitemap continued — pages and access control across the full platform*
 
 Mapping screens before writing any code forces a concrete question: what does the platform actually need versus what would be convenient to have?
-
+ 
 ![Sitemap Table for Folio Hub](/DECO2017-BLOG/assets/images/sitemap-table.png)
 
 *Fig. 7 — Sitemap table — access control column mapped alongside every page*
