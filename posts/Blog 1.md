@@ -27,6 +27,8 @@ On top of these there are some non-negotiables in this project:
 
 ![Non-negotiables from the brief](/DECO2017-BLOG/assets/images/Blog-1-non-negotiables-table.png)
 
+*Fig. 1 — The non-negotiables — minimum standards every site must meet*
+
 > These aren't just suggestions, they are the minimum standards for all our sites — a great idea that misses any one of them fails the brief.
 
 ---
