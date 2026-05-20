@@ -20,10 +20,9 @@ As a group, we each came in with a separate concept and sat down to figure out w
 
 ## Each Idea Breakdown
 
-<figure>
-  <img src="../assets/images/blog-2-ideation-comparison-table.png" alt="Ideation comparison of the three concepts" width="700">
-  <figcaption>Comparing the three concepts across feasibility, scope and community depth</figcaption>
-</figure>
+![Ideation comparison of the three concepts](/DECO2017-BLOG/assets/images/blog-2-ideation-comparison-table.png)
+
+*Fig. 2 — Comparing the three concepts across feasibility, scope and community depth*
 
 **Music Collaboration Platform** had the most exciting concept but the problem was the technical reality. Audio engineering in the browser requires the Web Audio API, which is well beyond our skill level and current stack.
 
@@ -63,10 +62,9 @@ Once assembled the team moves through five phases: **Ideate, Plan, Build, Ship, 
 
 ## Scope
 
-<figure>
-  <img src="../assets/images/scope-spark.png" alt="Scope breakdown for Spark" width="700">
-  <figcaption>Scope — must-haves versus could-haves for the Spark platform</figcaption>
-</figure>
+![Scope breakdown for Spark](/DECO2017-BLOG/assets/images/scope-spark.png)
+
+*Fig. 3 — Scope — must-haves versus could-haves for the Spark platform*
 
 **Must-haves:** idea pitching with tags and role slots, Spark Score, nudge system, discovery feed, build mode phase tracker, outcome card, badge on completion.
 

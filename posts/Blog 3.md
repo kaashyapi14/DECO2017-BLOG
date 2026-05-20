@@ -30,12 +30,11 @@ The brief essentially asks for something "tailor made" — a hub that tries to s
 
 **2. Narrow the audience entirely to designers building portfolio work.** Not all creatives — only design students and graduates who need real collaborative projects to show employers. Due to this, the tags became design disciplines: Brand, UI/UX, Product, Editorial, Motion. The roles became design-specific and the language shifted accordingly. Deliverables on each pitch became concrete design outputs: logo suite, brand guidelines, type system.
 
-<figure>
-  <img src="../assets/images/blog-3-folio-hub.png" alt="Folio Hub concept overview" width="700">
-  <figcaption>Folio Hub — the narrowed concept built around designers and portfolio work</figcaption>
-</figure>
+![Folio Hub concept overview](/DECO2017-BLOG/assets/images/blog-3-folio-hub.png)
 
-> We named the platform **Folio Hub** — where folio abbreviates portfolio and hub reflects the community.
+*Fig. 4 — Folio Hub — the narrowed concept built around designers and portfolio work*
+
+We named the platform **Folio Hub** — where folio abbreviates portfolio and hub reflects the community.
 
 ---
 
@@ -46,22 +45,19 @@ The previous tracker was replaced with an owner-defined checklist where the owne
 ---
 
 ## Sitemapping
-<figure>
-  <img src="../assets/images/sitemap-1.png" alt="Sitemap 1 for Folio Hub" width="700">
-  <figcaption>Sitemap — every page mapped with access control before a line of code was written</figcaption>
-</figure>
 
-<figure>
-  <img src="../assets/images/sitemap-2.png" alt="Sitemap 2 for Folio Hub" width="700">
-  <figcaption>Sitemap — every page mapped with access control before a line of code was written</figcaption>
-</figure>
+![Sitemap 1 for Folio Hub](/DECO2017-BLOG/assets/images/sitemap-1.png)
 
-> Mapping screens before writing any code forces a concrete question: what does the platform actually need versus what would be convenient to have?
+*Fig. 5 — Sitemap — every page mapped with access control before a line of code was written*
 
-<figure>
-  <img src="../assets/images/sitemap-table.png" alt="Sitemap Table for Folio Hub" width="700">
-  <figcaption>Sitemap — every page mapped with access control before a line of code was written</figcaption>
-</figure>
+![Sitemap 2 for Folio Hub](/DECO2017-BLOG/assets/images/sitemap-2.png)
+
+*Fig. 6 — Sitemap continued — pages and access control across the full platform*
+Mapping screens before writing any code forces a concrete question: what does the platform actually need versus what would be convenient to have?
+
+![Sitemap Table for Folio Hub](/DECO2017-BLOG/assets/images/sitemap-table.png)
+
+*Fig. 7 — Sitemap table — access control column mapped alongside every page*
 
 The completion vote and share pages were merged into one — confirming done and sharing to the showcase is one moment, not two screens. The access control column matters as much as the page list because it shows conditional logic that needs to be planned into every route before a line of code is written.
 
@@ -69,10 +65,9 @@ The completion vote and share pages were merged into one — confirming done and
 
 ## User Flow
 
-<figure>
-  <img src="../assets/images/user-flow.png" alt="User flow diagram for Folio Hub" width="700">
-  <figcaption>User flow — the owner and designer journeys mapped before any routes were written</figcaption>
-</figure>
+![User flow diagram for Folio Hub](/DECO2017-BLOG/assets/images/user-flow.png)
+
+*Fig. 8 — User flow — the owner and designer journeys mapped before any routes were written*
 
 Mapping the flow made something visible that the sitemap doesn't show — Folio Hub has two parallel journeys. The owner creates and manages. The designer browses and applies. Both paths converge at the build phase and finish together at the showcase. Mapping this before building meant we could identify where conditional logic needed to live before writing a single route.
 
