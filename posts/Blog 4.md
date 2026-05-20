@@ -24,7 +24,7 @@ Rather than wireframing as a group from the start, we each made our own version 
 ### Page 1 — Home / Feed
 
 <figure>
-  <img src="../assets/images/wireframe 1.png" alt="Wireframe of the home feed page" width="700">
+  <img src="../assets/images/wireframe-1.png" alt="Wireframe of the home feed page" width="700">
   <figcaption>Home / Feed — the card component is reused across showcase and profile</figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ This was the first page we tackled as it was the most important one, where the c
 ### Page 2 — Post a Pitch
 
 <figure>
-  <img src="../assets/images/wireframe 2.png" alt="Wireframe of the post a pitch form" width="700">
+  <img src="../assets/images/wireframe-2.png" alt="Wireframe of the post a pitch form" width="700">
   <figcaption>Post a Pitch — three role fields and a deadline dropdown keep submissions structured</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ The form is very simple: title, description, discipline tags, roles needed and p
 ### Page 3 — Pitch Detail
 
 <figure>
-  <img src="../assets/images/wireframe 3.png" alt="Wireframe of the pitch detail page" width="700">
+  <img src="../assets/images/wireframe-3.png" alt="Wireframe of the pitch detail page" width="700">
   <figcaption>Pitch Detail — two states depending on whether you're the owner or a designer</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ This page has two jobs depending on who's viewing it — a designer sees "Want i
 ### Page 4 — Manage Applicants
 
 <figure>
-  <img src="../assets/images/wireframe 4.png" alt="Wireframe of the manage applicants page" width="700">
+  <img src="../assets/images/wireframe-4.png" alt="Wireframe of the manage applicants page" width="700">
   <figcaption>Manage Applicants — spot counter and disabled state prevent accidental over-accepting</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ This is for owners only. I made a simple list showing each applicant's name, rol
 ### Page 5 — Build Checklist
 
 <figure>
-  <img src="../assets/images/wireframe 5.png" alt="Wireframe of the build checklist page" width="700">
+  <img src="../assets/images/wireframe-5.png" alt="Wireframe of the build checklist page" width="700">
   <figcaption>Build Checklist — progress bar and completion confirmation on one page</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ The most complex page to wireframe. The progress bar and completion confirmation
 ### Page 6 — Showcase
 
 <figure>
-  <img src="../assets/images/wireframe 6.png" alt="Wireframe of the showcase page" width="700">
+  <img src="../assets/images/wireframe-6.png" alt="Wireframe of the showcase page" width="700">
   <figcaption>Showcase — ratings and comments open on the same page, no navigation away</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ The same card component from the feed is reused here deliberately for consistenc
 ### Page 7 — My Profile
 
 <figure>
-  <img src="../assets/images/wireframe 7.png" alt="Wireframe of the profile page" width="700">
+  <img src="../assets/images/wireframe-7.png" alt="Wireframe of the profile page" width="700">
   <figcaption>My Profile — badge shown prominently, three tabs pulling from different database queries</figcaption>
 </figure>
 

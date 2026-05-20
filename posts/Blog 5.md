@@ -20,7 +20,7 @@ After wireframing, moving to actual code meant figuring out exactly what data ea
 ## Database Tables
 
 <figure>
-  <img src="../assets/images/SQLite Table.png" alt="SQLite database tables overview" width="700">
+  <img src="../assets/images/sqlite-table.png alt="SQLite database tables overview" width="700">
   <figcaption>The five SQLite tables and their relationships at a glance</figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ After mapping every page we landed on five tables in our SQLite database — eac
 ### DDD — Users
 
 <figure>
-  <img src="../assets/images/DDD users.png" alt="DDD for the users table" width="700">
+  <img src="../assets/images/DDD-users.png" alt="DDD for the users table" width="700">
   <figcaption>Users table — touched by almost every route in the platform</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Each and every page reads from the users table in some way or the other. The nav
 ### DDD — Projects
 
 <figure>
-  <img src="../assets/images/DDD projects.png" alt="DDD for the projects table" width="700">
+  <img src="../assets/images/DDD-projects.png" alt="DDD for the projects table" width="700">
   <figcaption>Projects table — the central table every page reads or writes to</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ This is the table central to all — every page reads or writes to it in some fo
 ### DDD — Applications
 
 <figure>
-  <img src="../assets/images/DDD applications.png" alt="DDD for the applications table" width="700">
+  <img src="../assets/images/DDD-applications.png" alt="DDD for the applications table" width="700">
   <figcaption>Applications table — the many-to-many link and access control list in one</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ This is the table central to all — every page reads or writes to it in some fo
 ### DDD — Checklist Items
 
 <figure>
-  <img src="../assets/images/DDD checklist items.png" alt="DDD for the checklist items table" width="700">
+  <img src="../assets/images/DDD-checklist-items.png" alt="DDD for the checklist items table" width="700">
   <figcaption>Checklist Items — one row per task, one boolean, one count query for the progress bar</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Probably the simplest table — one row per task, one boolean to track completio
 ### DDD — Project Ratings
 
 <figure>
-  <img src="../assets/images/DDD project ratings.png" alt="DDD for the project ratings table" width="700">
+  <img src="../assets/images/DDD-project-ratings.png" alt="DDD for the project ratings table" width="700">
   <figcaption>Project Ratings — one row per user per project prevents duplicate ratings</figcaption>
 </figure>
 

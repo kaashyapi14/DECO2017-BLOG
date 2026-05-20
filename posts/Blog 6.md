@@ -19,17 +19,17 @@ tags:
 With all seven HTML and CSS pages built, the interface is complete and consistent throughout. The feed, post a pitch, pitch detail, manage applicants, build checklist, showcase and profile pages are all done as static HTML.
 
 <figure>
-  <img src="../assets/images/html 1.png" alt="Built HTML pages screenshot 1" width="700">
+  <img src="../assets/images/html-1.png" alt="Built HTML pages screenshot 1" width="700">
   <figcaption>The completed static interface — consistent design system across all seven pages</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/html 2.png" alt="Built HTML pages screenshot 2" width="700">
+  <img src="../assets/images/html-2.png" alt="Built HTML pages screenshot 2" width="700">
   <figcaption>DM Serif Display for headings, DM Sans for UI, saffron amber reserved for badges and ratings</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/html 3.png" alt="Built HTML pages screenshot 3" width="700">
+  <img src="../assets/images/html-3.png" alt="Built HTML pages screenshot 3" width="700">
   <figcaption>All seven pages built as static HTML before the backend is connected</figcaption>
 </figure>
 
