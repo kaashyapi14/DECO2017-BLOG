@@ -1,6 +1,6 @@
 ---
 title: "Blog 3 — Finalising the Idea and Structure"
-date: 2026-02-28
+date: 2026-05-12
 author: "Kaashyapi Agarwal"
 summary: "How Spark evolved into Folio Hub through simplifying features, narrowing the audience, and structuring the platform."
 tags:

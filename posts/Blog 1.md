@@ -1,6 +1,6 @@
 ---
 title: "Blog 1 — From Brief to One Idea"
-date: 2026-02-14
+date: 2026-05-03
 author: "Kaashyapi Agarwal"
 summary: "Breaking down the BlaBla Corp brief and exploring early platform concepts."
 tags:
