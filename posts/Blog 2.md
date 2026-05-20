@@ -20,6 +20,11 @@ As a group, we each came in with a separate concept and sat down to figure out w
 
 ## Each Idea Breakdown
 
+<figure>
+  <img src="../assets/images/blog 2 ideation comparison.png" alt="Ideation comparison of the three concepts" width="700">
+  <figcaption>Comparing the three concepts across feasibility, scope and community depth</figcaption>
+</figure>
+
 **Music Collaboration Platform** had the most exciting concept but the problem was the technical reality. Audio engineering in the browser requires the Web Audio API, which is well beyond our skill level and current stack.
 
 **Project Builder Hub** had solid structure and the community spirit but it felt too broad with no clear identity to stand out from existing platforms. Without a specific audience the functional requirements become too vague to build around.
@@ -57,6 +62,11 @@ Once assembled the team moves through five phases: **Ideate, Plan, Build, Ship, 
 ---
 
 ## Scope
+
+<figure>
+  <img src="../assets/images/Scope spark.png" alt="Scope breakdown for Spark" width="700">
+  <figcaption>Scope — must-haves versus could-haves for the Spark platform</figcaption>
+</figure>
 
 **Must-haves:** idea pitching with tags and role slots, Spark Score, nudge system, discovery feed, build mode phase tracker, outcome card, badge on completion.
 

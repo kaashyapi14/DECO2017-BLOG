@@ -30,6 +30,11 @@ The brief essentially asks for something "tailor made" — a hub that tries to s
 
 **2. Narrow the audience entirely to designers building portfolio work.** Not all creatives — only design students and graduates who need real collaborative projects to show employers. Due to this, the tags became design disciplines: Brand, UI/UX, Product, Editorial, Motion. The roles became design-specific and the language shifted accordingly. Deliverables on each pitch became concrete design outputs: logo suite, brand guidelines, type system.
 
+<figure>
+  <img src="../assets/images/blog 3 folio hub.png" alt="Folio Hub concept overview" width="700">
+  <figcaption>Folio Hub — the narrowed concept built around designers and portfolio work</figcaption>
+</figure>
+
 > We named the platform **Folio Hub** — where folio abbreviates portfolio and hub reflects the community.
 
 ---
@@ -42,6 +47,11 @@ The previous tracker was replaced with an owner-defined checklist where the owne
 
 ## Sitemapping
 
+<figure>
+  <img src="../assets/images/Sitemap Table.png" alt="Sitemap for Folio Hub" width="700">
+  <figcaption>Sitemap — every page mapped with access control before a line of code was written</figcaption>
+</figure>
+
 > Mapping screens before writing any code forces a concrete question: what does the platform actually need versus what would be convenient to have?
 
 The completion vote and share pages were merged into one — confirming done and sharing to the showcase is one moment, not two screens. The access control column matters as much as the page list because it shows conditional logic that needs to be planned into every route before a line of code is written.
@@ -49,6 +59,11 @@ The completion vote and share pages were merged into one — confirming done and
 ---
 
 ## User Flow
+
+<figure>
+  <img src="../assets/images/User Flow.png" alt="User flow diagram for Folio Hub" width="700">
+  <figcaption>User flow — the owner and designer journeys mapped before any routes were written</figcaption>
+</figure>
 
 Mapping the flow made something visible that the sitemap doesn't show — Folio Hub has two parallel journeys. The owner creates and manages. The designer browses and applies. Both paths converge at the build phase and finish together at the showcase. Mapping this before building meant we could identify where conditional logic needed to live before writing a single route.
 
