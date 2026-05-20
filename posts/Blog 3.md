@@ -47,19 +47,19 @@ The previous tracker was replaced with an owner-defined checklist where the owne
 
 ## Sitemapping
 <figure>
-  <img src="../assets/images/sitemap-1.png" alt="Sitemap for Folio Hub" width="700">
+  <img src="../assets/images/sitemap-1.png" alt="Sitemap 1 for Folio Hub" width="700">
   <figcaption>Sitemap — every page mapped with access control before a line of code was written</figcaption>
 </figure>
 
 <figure>
-  <img src="../assets/images/sitemap-2.png" alt="Sitemap for Folio Hub" width="700">
+  <img src="../assets/images/sitemap-2.png" alt="Sitemap 2 for Folio Hub" width="700">
   <figcaption>Sitemap — every page mapped with access control before a line of code was written</figcaption>
 </figure>
 
 > Mapping screens before writing any code forces a concrete question: what does the platform actually need versus what would be convenient to have?
 
 <figure>
-  <img src="../assets/images/sitemap-table.png" alt="Sitemap for Folio Hub" width="700">
+  <img src="../assets/images/sitemap-table.png" alt="Sitemap Table for Folio Hub" width="700">
   <figcaption>Sitemap — every page mapped with access control before a line of code was written</figcaption>
 </figure>
 
