@@ -1,5 +1,5 @@
 ---
-title: "Blog 2 — Three Ideas, One Direction"
+title: "Blog 2"
 date: 2026-05-09
 author: "Kaashyapi Agarwal"
 summary: "How three separate concepts evolved into one collaborative platform idea."
@@ -9,7 +9,7 @@ tags:
   - ux-design
 ---
 
-# BLOG 2 — Three Ideas, One Direction
+# Three Ideas, One Direction
 
 ## Bringing It Together
 
