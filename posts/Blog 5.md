@@ -9,68 +9,101 @@ tags:
   - folio hub
 ---
 
-# Blog 6 — Building and Evaluating Folio Hub
+# Blog 5 — From Wireframes to a Real Data Model
 
 ---
 
-## Building the Interface
+After wireframing, moving to actual code meant figuring out exactly what data each page needs, where it comes from, and how it all connects. Before writing a single route we mapped out the full data structure. Getting this wrong early would mean restructuring tables halfway through the build, which breaks everything already working.
 
-With all seven HTML and CSS pages built, the interface is complete and consistent throughout. The feed, post a pitch, pitch detail, manage applicants, build checklist, showcase and profile pages are all done as static HTML.
+---
+
+## Database Tables
 
 <figure>
-  <img src="../assets/images/html 1.png" alt="Built HTML pages screenshot 1" width="700">
-  <figcaption>The completed static interface — consistent design system across all seven pages</figcaption>
+  <img src="../assets/images/SQLite Table.png" alt="SQLite database tables overview" width="700">
+  <figcaption>The five SQLite tables and their relationships at a glance</figcaption>
 </figure>
+
+After mapping every page we landed on five tables in our SQLite database — each one has a clear job.
+
+---
+
+### DDD — Users
 
 <figure>
-  <img src="../assets/images/html 2.png" alt="Built HTML pages screenshot 2" width="700">
-  <figcaption>DM Serif Display for headings, DM Sans for UI, saffron amber reserved for badges and ratings</figcaption>
+  <img src="../assets/images/DDD users.png" alt="DDD for the users table" width="700">
+  <figcaption>Users table — touched by almost every route in the platform</figcaption>
 </figure>
+
+Each and every page reads from the users table in some way or the other. The nav bar, pitch cards, applicant lists and the badge trigger all depend on it.
+
+---
+
+### DDD — Projects
 
 <figure>
-  <img src="../assets/images/html 3.png" alt="Built HTML pages screenshot 3" width="700">
-  <figcaption>All seven pages built as static HTML before the backend is connected</figcaption>
+  <img src="../assets/images/DDD projects.png" alt="DDD for the projects table" width="700">
+  <figcaption>Projects table — the central table every page reads or writes to</figcaption>
 </figure>
 
-The design system holds across every page — **DM Serif Display** for headings, **DM Sans** for UI, warm off-white background with saffron amber reserved only for badges and ratings. The next step is connecting MojoJS routes and SQLite to make everything functional.
+This is the table central to all — every page reads or writes to it in some form.
+
+> The `status` column does the most work in the entire schema. Every access control check reads it before rendering a page — the feed only shows `open` projects, the checklist only loads for `team_locked` ones, the showcase only displays `shared` ones. Keeping it as one column moving through four states rather than separate boolean flags kept the queries simple and avoided conflicting states.
 
 ---
 
-## User Testing
+### DDD — Applications
 
-User testing is currently underway. We walked our design peers through the core journey — posting a pitch, applying to one and completing the checklist — and observed where they hesitated or got confused. The focus was on three things: whether the two-state pitch detail page is immediately clear, whether the checklist completion flow feels intuitive, and whether the badge mechanic is understood without explanation. Feedback is being used to refine copy, button placement and information hierarchy before the backend is connected.
-
----
-
-## Accessibility
-
-Accessibility has been built in from the start rather than added at the end.
-
-- Star ratings and interactive buttons use `aria-labels` so screen readers announce values correctly.
-- All form fields have explicit `label` elements — placeholder text alone disappears when typing and isn't reliably read aloud.
-- Role slot status uses a text label alongside colour so open and filled states are never communicated by colour alone.
-
-These decisions directly address the AA compliance requirement from the brief.
+<figure>
+  <img src="../assets/images/DDD applications.png" alt="DDD for the applications table" width="700">
+  <figcaption>Applications table — the many-to-many link and access control list in one</figcaption>
+</figure>
 
 ---
 
-## Privacy and Platform Responsibility
+### DDD — Checklist Items
 
-BlaBla Corp handles authentication centrally so Folio Hub doesn't store passwords or login data. However the platform stores user-generated content — pitch descriptions, comments and ratings — which means content moderation needs consideration.
+<figure>
+  <img src="../assets/images/DDD checklist items.png" alt="DDD for the checklist items table" width="700">
+  <figcaption>Checklist Items — one row per task, one boolean, one count query for the progress bar</figcaption>
+</figure>
 
-There is no flagging system in the current prototype, which is a known gap. EU cookie policy compliance is required by the brief — session cookies need to be clearly disclosed. Rating integrity is also an open question; nothing currently prevents vote manipulation, which would need addressing before any real deployment.
+Probably the simplest table — one row per task, one boolean to track completion. The progress bar percentage is calculated from a single count query: completed items divided by total items multiplied by 100. No extra columns needed, which was a deliberate choice to keep things manageable.
 
 ---
 
-## What to Refine
+### DDD — Project Ratings
 
-With all seven pages built, the focus now shifts to connecting the backend.
+<figure>
+  <img src="../assets/images/DDD project ratings.png" alt="DDD for the project ratings table" width="700">
+  <figcaption>Project Ratings — one row per user per project prevents duplicate ratings</figcaption>
+</figure>
 
-- **MojoJS routes** need to be written for every page.
-- **SQLite** needs to be populated with the right tables.
-- **HTMX interactions** need to be wired up.
-- The **showcase** needs the rating and badge logic built end to end.
-- The **manage applicants page** needs the lock team button to correctly update project status.
-- The **profile tabs** need the right queries pulling the correct projects into each view.
+One row per user per project. Before any new rating is inserted the route checks for an existing row so no one can rate twice. After every insert MojoJS calculates the average and if it hits 3 or above, `has_badge` updates to `1` for the owner and every accepted applicant automatically.
 
-The goal is a working end-to-end journey from posting a pitch to earning a badge before the final submission.
+---
+
+## What the ERD Reveals
+
+<figure>
+  <img src="../assets/images/ERD.png" alt="Entity relationship diagram for Folio Hub" width="700">
+  <figcaption>ERD — five tables, three key insights about how the platform holds together</figcaption>
+</figure>
+
+Three important things surfaced from drawing the relationships between the five tables.
+
+**1. Users sit at the centre of all.** It connects to projects, applications and ratings — meaning almost every route touches this table in some way.
+
+**2. The applications table is doing double duty.** It's both the many-to-many link between users and projects and the access control list for the build page. Every team-gated route queries this table first.
+
+**3. There's no separate showcase table.** Shared projects are just projects with `status = shared`. That one decision cut an entire table and keeps the showcase query to a simple `SELECT` with a `WHERE` clause.
+
+---
+
+> **Trade-off worth naming:** we consciously stored `who_needed` as a comma-separated string rather than a separate roles table. It works for our scope of three roles maximum but would break if we ever needed to query by individual role. It's a decision, not an oversight.
+
+---
+
+## What's Next
+
+With the data model mapped and the stack decisions made, the next step is building out the remaining HTML and CSS pages and running user testing on the static interfaces. Once all seven pages are done the focus shifts to accessibility, evaluation and platform responsibility — and what needs to be refined before the backend is connected. That's what the final post covers.

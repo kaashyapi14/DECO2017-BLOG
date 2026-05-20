@@ -21,7 +21,7 @@ As a group, we each came in with a separate concept and sat down to figure out w
 ## Each Idea Breakdown
 
 <figure>
-  <img src="../assets/images/blog 2 ideation comparison.png" alt="Ideation comparison of the three concepts" width="700">
+  <img src="../assets/images/blog 2 ideation comparison table.png" alt="Ideation comparison of the three concepts" width="700">
   <figcaption>Comparing the three concepts across feasibility, scope and community depth</figcaption>
 </figure>
 
