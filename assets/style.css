@@ -67,5 +67,12 @@ img + em {
   text-align: center;
   font-size: 0.85rem;
   color: #aaa;
-  margin-top: 0.4rem;
+  margin-top: 0.4rem; 
+}
+img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
