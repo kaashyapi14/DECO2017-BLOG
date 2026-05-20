@@ -1,12 +1,13 @@
 ---
-title: "Mt Blog"
+title: "Blog 1 — From Brief to One Idea"
 date: 2026-02-14
 author: "Kaashyapi Agarwal"
-summary: "The first blog"
+summary: "Breaking down the BlaBla Corp brief and exploring early platform concepts."
 tags:
-  - tag1
-  - tag2
-  - tag3
+  - ux-design
+  - design-process
+  - ideation
+  - community-platforms
 ---
 
 # From Brief to One Idea
