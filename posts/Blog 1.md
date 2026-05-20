@@ -12,87 +12,194 @@ tags:
 
 # From Brief to One Idea
 
+> Exploring how the initial brief evolved into a collaborative platform concept.
+
+---
+
 ## Breaking Down the Brief
 
-We're building for BlaBla Corp, which is a fictional social media company. It describes itself as a platform built around “community” and not just a place to post things, but somewhere people genuinely want to spend time. 
+We're building for **BlaBla Corp**, a fictional social media company designed around the idea of *community* — not just a place to post content, but somewhere people genuinely want to spend time.
 
-The brief talks about *“effortless sharing”* and *“tailor made”* experiences, which pushed me to think about what actually makes that happen. What gives a community its identity? What makes someone come back rather than just scroll through once and leave? Those were the questions sitting behind every decision I made when thinking about my idea.
+The brief talks about **“effortless sharing”** and **“tailor made experiences”**, which pushed me to think deeper about what actually creates meaningful communities online.
 
-The core of everything according to the brief is *“the right information”* and *“the right experience”*, meaning what people share and how it feels to be part of it.
+> What gives a community its identity?  
+> What makes someone return instead of scrolling once and leaving?
 
-Something that shapes the design from the start, and was honestly a relief to read, is that there’s no sign-up or login page to build. BlaBla Corp handles authentication centrally, so every person landing on the hub is already a verified user. That removes a whole layer of complexity and keeps the focus on the community itself.
+Those questions sat behind every decision I made throughout the ideation process.
 
-The tech stack is also set:
+---
 
-- **MojoJS** handles routes and server logic  
-- **SQLite** stores the data  
-- **HTMX** manages frontend interactions without full page reloads  
+## Understanding the Core of the Brief
 
-We can build on top of it, but we can’t replace any part of it.
+According to the brief, the foundation of the platform is:
 
-On top of these, there are some non-negotiables in this project:
+- The **right information**
+- The **right experience**
+
+Meaning not only *what* people share, but also *how* it feels to participate in the space.
+
+One detail that immediately shaped the direction of the project — and honestly felt like a relief — was that there was **no authentication system to design**.
+
+> [!TIP]
+> BlaBla Corp handles authentication centrally, meaning every user entering the platform is already verified.
+
+That removed an entire layer of complexity and allowed the focus to stay entirely on the community experience itself.
+
+---
+
+## Technical Constraints
+
+The technical stack was already defined:
+
+| Technology | Purpose |
+|---|---|
+| **MojoJS** | Routes and server logic |
+| **SQLite** | Database storage |
+| **HTMX** | Frontend interactions without full page reloads |
+
+We could build on top of the stack, but we couldn't replace any part of it.
+
+---
+
+## Non-Negotiables
+
+Beyond the technical setup, there were several requirements that every solution had to meet.
 
 | Requirement | Importance |
-|-------------|-------------|
+|---|---|
 | Accessibility support | Essential |
 | Keyboard navigation | Required |
-| Responsive experience | Required |
+| Responsive layouts | Required |
 | Semantic structure | Required |
 
-These aren’t just suggestions, they are the minimum standards for all our sites. A great idea that misses any one of them fails the brief.
+> [!IMPORTANT]
+> These weren’t suggestions — they were the minimum standard for every project. A strong idea that ignored any one of them failed the brief entirely.
 
 ---
 
-## My Initial Ideas
+# Initial Ideation
 
-Reading the brief for the first time, my instinct was to build something for the creative communities I’m personally part of. People in these spaces are looking for a real place to connect and create together. That became the direction for every idea I considered.
+`Research`  
+`Ideation`  
+`Community Thinking`
 
-I explored two different ideas.
+Reading the brief for the first time, my instinct was to build something for the creative communities I’m personally part of.
 
----
+People in these spaces are often searching for a place to genuinely connect and create together, not just consume content passively.
 
-## Idea 1 — Creative Challenge Hub
+That became the direction behind every concept I explored.
 
-A community where weekly creative challenges are posted across different disciplines such as design, writing, photography, illustration, and music. Everyone submits their take and the community votes on the best execution. A new prompt every week, open to everyone.
-
-### Strength
-
-Gives creatives across different fields a reason to keep coming back. The challenge format creates a natural content cycle and the voting mechanic builds genuine engagement around shared work.
-
-### Risk
-
-Voting without clear criteria becomes a popularity contest rather than a quality filter. It also produces no lasting output — submissions live and die within the week and nothing gets built together.
-
-### Accessibility
-
-Submission uploads and voting interactions need full keyboard support, and all images need descriptive alt text.
+I narrowed the possibilities into two main ideas.
 
 ---
 
-## Idea 2 — Project Builder Hub
+# Idea 1 — Creative Challenge Hub
 
-A community where people don’t just talk about ideas but actually turn them into real projects. Users can pitch an idea, find collaborators, work through it together with a shared structure, and post the result when finished.
+A platform where weekly creative challenges are posted across different disciplines such as:
 
-### Strength
+- Design  
+- Writing  
+- Photography  
+- Illustration  
+- Music  
 
-Solves the gap the first idea reveals — people want to create together, not just attend things. This gives them a way to actually build something and show it to the world.
+Users submit their interpretation of the challenge and the community votes on the strongest execution.
 
-### Risk
-
-Trying to do too much at once — essentially Trello, LinkedIn, and Reddit built all in one. The core concept was solid, but the scope needed serious cutting down.
-
-### Accessibility
-
-All interactive elements need keyboard support and fields need explicit labels throughout.
+A new prompt appears every week, open to everyone.
 
 ---
 
-## Reflection
+## Strength
 
-Project Builder Hub felt like the stronger pitch to me because it answered something the Creative Challenge Hub couldn’t.
+The challenge structure creates a natural content cycle and gives creatives a reason to continually return to the platform.
 
-What happens after the challenge ends?
+The voting system also creates engagement around shared work and encourages participation across multiple creative disciplines.
 
-Nothing gets built together, no lasting output, no team.
+---
 
-Project Builder Hub closes that gap by giving people a structure to actually finish something collaborative and show it to the world.
+## Risk
+
+> [!WARNING]
+> Without clear criteria, voting risks becoming a popularity contest rather than a quality filter.
+
+Another major issue was longevity.
+
+Submissions would live and die within a single week, meaning nothing lasting actually gets built collaboratively.
+
+---
+
+## Accessibility Considerations
+
+Accessibility requirements included:
+
+- Full keyboard navigation for uploads and voting
+- Descriptive alt text for all image submissions
+- Semantic form structures
+
+---
+
+# Idea 2 — Project Builder Hub
+
+A platform where people don’t just discuss ideas but actually turn them into real collaborative projects.
+
+Users could:
+
+- Pitch ideas
+- Find collaborators
+- Build together through a shared structure
+- Publish the final outcome once complete
+
+---
+
+## Strength
+
+This idea solved the major gap left by the Creative Challenge Hub.
+
+> People don’t just want to participate.  
+> They want to create something meaningful together.
+
+The platform created a pathway for users to not only collaborate, but also produce tangible work they could publicly showcase.
+
+---
+
+## Risk
+
+> [!WARNING]
+> The concept risked becoming too broad — essentially Trello, LinkedIn, and Reddit combined into one platform.
+
+The core direction felt strong, but the scope required serious simplification before it could realistically be built.
+
+---
+
+## Accessibility Considerations
+
+Key accessibility requirements included:
+
+- Keyboard support across all interactions
+- Explicit form labels throughout the platform
+- Clear navigation hierarchy
+
+---
+
+# Reflection
+
+Project Builder Hub ultimately felt like the stronger concept because it answered something the Creative Challenge Hub couldn’t.
+
+> What happens after the challenge ends?
+
+Nothing gets built together.  
+No lasting output exists.  
+No team forms.
+
+Project Builder Hub closed that gap by giving people a structure to actually finish something collaboratively and share it with the world.
+
+---
+
+## Next Step
+
+At this stage, the concept still felt broad, but the collaborative direction felt much more aligned with what the brief was truly asking for.
+
+The next challenge became figuring out:
+
+> How could this idea become more focused, achievable, and technically realistic?
+```
