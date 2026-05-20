@@ -25,6 +25,11 @@ The tech stack is also set: **MojoJS** handles routes and server logic, **SQLite
 
 On top of these there are some non-negotiables in this project:
 
+<figure>
+  <img src="../assets/images/Blog 1 non negotiables.png" alt="Non-negotiables from the brief" width="700">
+  <figcaption>The non-negotiables — minimum standards every site must meet</figcaption>
+</figure>
+
 > These aren't just suggestions, they are the minimum standards for all our sites — a great idea that misses any one of them fails the brief.
 
 ---
