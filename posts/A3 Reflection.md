@@ -20,7 +20,7 @@ Building Folio Hub pushed me to think about web development differently, not jus
 
 To evaluate how Folio Hub actually performs, we ran Lighthouse audits across all six pages. Scores ranged from 96 to 99 and Best Practices hit a perfect 100 everywhere, reflecting that the app is built on solid technical foundations with no deprecated APIs or security issues.
 
-![Lighthouse Inspections Table](/DECO2017-BLOG/assets/images/lighthouse-inspection.png)
+![Lighthouse Inspections Table](/DECO2017-BLOG/assets/images/Lighthouse.png)
 
 The variation between pages made sense once I thought about what each one is actually doing. Post a Pitch was the fastest, scoring 99 with both FCP and LCP at 0.7s as it's a static form with no images and no database queries on load. 
 
