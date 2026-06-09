@@ -16,7 +16,7 @@ Building Folio Hub pushed me to think about web development differently, not jus
 
 ---
 
-## Evaluation of Performance and Technical Behaviour
+## Performance and Technical Behaviour
 
 To evaluate how Folio Hub actually performs, we ran Lighthouse audits across all six pages. Scores ranged from 96 to 99 and Best Practices hit a perfect 100 everywhere, reflecting that the app is built on solid technical foundations with no deprecated APIs or security issues.
 
@@ -39,27 +39,29 @@ The HTMX interactions felt noticeably responsive like toggling a checklist item 
 
 ## User Experience and Accessibility (LightHouse and WAVE)
 
+![WAVE](/DECO2017-BLOG/assets/images/WAVE.png)
+
 Accessibility was something we approached from the start rather than working on at the end, and the Lighthouse scores reflect that most pages scored between 94 and 96. The foundational work held up well, every form input has a matching `<label for="">`, all images have descriptive alt text, the progress bar uses `role="progressbar"` with the correct ARIA attributes, and the interest counter uses `aria-live="polite"`.
-
-The lowest score was the Profile page at 90, the only page using JavaScript-driven tab switching. After looking into it, `aria-selected`and `aria-controls` aren't being updated dynamically when a tab is clicked therefore a small update to `switchTab()` would fix it. It's a good reminder that dynamic interactions need extra care to stay accessible.
-
-The contrast failure on the Feed and Showcase pages was a deliberate trade-off. The muted secondary colour (`#9b9189` against `#f5f2ed`) falls just below the WCAG AA 4.5:1 ratio, which was intentional for keeping the visual hierarchy clean. Darkening it by around 10% would pass AA without visibly breaking the palette.
-
-The bigger gaps only became visible through testing with multiple accounts. The collaborator experience was completely unaccounted for a collaborator would see the exact same controls as the owner, including the publish button. Threading an `isOwner` flag through the relevant controllers and templates wasn't in the original plan but was the right call. 
-
-The apply button also had no feedback after clicking, so a teammate assumed it hadn't worked. We fixed that with an HTMX state change swapping it for an "Interest sent" confirmation. The My Projects page was rethought entirely it originally just listed projects you owned, duplicating the profile page. Changing it to show everything you own, collaborate on, and have applied to made it actually worth using.
-
-Full keyboard navigation is the one gap that didn't get addressed and would be the first thing I'd prioritise if development continued.
 
 ![Profile Inspection](/DECO2017-BLOG/assets/images/Profile_Lighthouse.jpeg)
 
+The lowest score was the Profile page at 90, the only page using JavaScript-driven tab switching. After looking into it, `aria-selected`and `aria-controls` aren't being updated dynamically when a tab is clicked therefore a small update to `switchTab()` would fix it. It's a good reminder that dynamic interactions need extra care to stay accessible.
 
 ![Feed Inspection](/DECO2017-BLOG/assets/images/Feed_Lighthouse.jpeg)
 
 ![Showcase Inspection](/DECO2017-BLOG/assets/images/Showcase_Lighthouse.jpeg)
 
+The contrast failure on the Feed and Showcase pages was a deliberate trade-off. The muted secondary colour (`#9b9189` against `#f5f2ed`) falls just below the WCAG AA 4.5:1 ratio, which was intentional for keeping the visual hierarchy clean. Darkening it by around 10% would pass AA without visibly breaking the palette.
+
+The bigger gaps only became visible through testing with multiple accounts. The collaborator experience was completely unaccounted for a collaborator would see the exact same controls as the owner, including the publish button. Threading an `isOwner` flag through the relevant controllers and templates wasn't in the original plan but was the right call. 
 
 ![Applicants Inspection](/DECO2017-BLOG/assets/images/Applicants_Lighthouse.jpeg)
+
+The apply button also had no feedback after clicking, so a teammate assumed it hadn't worked. We fixed that with an HTMX state change swapping it for an "Interest sent" confirmation. The My Projects page was rethought entirely it originally just listed projects you owned, duplicating the profile page. Changing it to show everything you own, collaborate on, and have applied to made it actually worth using.
+
+Full keyboard navigation is the one gap that didn't get addressed and would be the first thing I'd prioritise if development continued.
+
+
 
 ---
 
